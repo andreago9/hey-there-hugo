@@ -1,26 +1,37 @@
 {{ define "main" }}
-<div class="header">
-  <div class="logo">
-    <img src="https://res.cloudinary.com/dzkoxrsdj/image/upload/v1656559096/template_1_edyp8b.png" alt="netlify + hugo banner" role="presentation">
-  </div>
-</div>
-<div class="resource-list">
-  <h2>
-      TESTESTESTESESSSSSS
-  </h2>
-  <ul>
-    <li>
-      <a href="https://github.com/netlify-templates/hugo-quickstart">The Hugo Quickstart repo</a>
-    </li>
-    <li>
-      <a href="https://ntl.fyi/3xXydGk">Netlify Blog: Hugo posts</a>
+<main class="container">
+  <section class="hero">
+    <h1>CERTA</h1>
+    <p>Soluções em tecnologia para <strong>[seu foco aqui]</strong>.</p>
+    <div class="cta">
+      <a class="button" href="/sobre/">Conheça a empresa</a>
+      <a class="button button-outline" href="/contato/">Fale conosco</a>
+    </div>
+  </section>
+
+  <section>
+    <h2>O que fazemos</h2>
+    <ul class="cards">
+      <li class="card">
+        <h3>Serviço 1</h3>
+        <p>Descrição curta do serviço 1.</p>
       </li>
-    <li>
-      <a href="https://ntl.fyi/3P9w1mr">Hugo on Netlify Docs</a>
-    </li>
-    <li>
-      <a href="https://gohugo.io/documentation/">Hugo Docs</a>
-    </li>
-  </ul>
-</div>
+      <li class="card">
+        <h3>Serviço 2</h3>
+        <p>Descrição curta do serviço 2.</p>
+      </li>
+      <li class="card">
+        <h3>Serviço 3</h3>
+        <p>Descrição curta do serviço 3.</p>
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Contato</h2>
+    <p>Email: <a href="mailto:contato@certa.tec.br">contato@certa.tec.br</a></p>
+    <p>Telefone: +55 (xx) xxxx-xxxx</p>
+    <p>Endereço: [coloque aqui]</p>
+  </section>
+</main>
 {{ end }}
