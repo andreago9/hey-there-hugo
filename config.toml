@@ -1,4 +1,10 @@
-baseURL = 'http://hugo-quickstart-template.netlify.com'
-languageCode = 'en-us'
-title = 'Netlify + Hugo Quickstart'
-theme = 'netlify-basic'
+baseURL = "https://certa.tec.br/"
+languageCode = "pt-br"
+title = "CERTA"
+theme = "netlify-basic"
+
+# original
+# baseURL = 'http://hugo-quickstart-template.netlify.com'
+# languageCode = 'en-us'
+# title = 'Netlify + Hugo Quickstart'
+# theme = 'netlify-basic'
