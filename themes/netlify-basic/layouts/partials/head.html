@@ -1,8 +1,25 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="/css/style.css">
-  {{ $title := print .Site.Title " | " .Title }}
-  {{ if .IsHome }}{{ $title = .Site.Title }}{{ end }}
+
+  {{- $title := print .Site.Title " | " .Title -}}
+  {{- if .IsHome -}}{{- $title = .Site.Title -}}{{- end -}}
   <title>{{ $title }}</title>
+
+  {{- with .Site.Params.description -}}
+    <meta name="description" content="{{ . }}">
+  {{- end -}}
+
+  <link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
+
+  {{/* Favicon (coloque o arquivo em static/favicon.ico) */}}
+  <link rel="icon" href="{{ "favicon.ico" | relURL }}">
+
+  {{/* Open Graph básico */}}
+  <meta property="og:title" content="{{ $title }}">
+  {{- with .Site.Params.description -}}
+    <meta property="og:description" content="{{ . }}">
+  {{- end -}}
+  <meta property="og:type" content="{{ if .IsHome }}website{{ else }}article{{ end }}">
+  <meta property="og:url" content="{{ .Permalink }}">
 </head>
