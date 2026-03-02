@@ -2,9 +2,12 @@ baseURL = "https://certa.tec.br/"
 languageCode = "pt-br"
 title = "CERTA"
 theme = "netlify-basic"
+[params]
+  description = "Palavra Certa Linguistica Computacional."
 
 # original
 # baseURL = 'http://hugo-quickstart-template.netlify.com'
 # languageCode = 'en-us'
 # title = 'Netlify + Hugo Quickstart'
 # theme = 'netlify-basic'
+
